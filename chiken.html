@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الدواجن - خيرات تيبار</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --main-red: #8b0000; --accent-yellow: #f1c40f; --bg-color: #fffaf0; }
+        body { font-family: 'Cairo', sans-serif; margin: 0; background-color: var(--bg-color); }
+        
+        header { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center; color: white; padding: 60px 20px; text-align: center;
+        }
+
+        nav { background: #333; text-align: center; padding: 10px; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+
+        .shipping-info { background: var(--main-red); color: white; display: inline-block; padding: 5px 20px; border-radius: 50px; margin-top: 15px; font-weight: bold; }
+
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; border: 2px solid #eee; }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .content { padding: 20px; }
+        .price-tag { color: var(--main-red); font-weight: bold; font-size: 1.3rem; display: block; margin-bottom: 15px; }
+        
+        .btn-whatsapp { display: block; background: #25d366; color: white; text-decoration: none; padding: 12px; border-radius: 10px; font-weight: bold; }
+        footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">المنتجات الفلاحية</a>
+    <a href="chicken.html" style="color: var(--accent-yellow);">قسم الدواجن 🍗</a>
+</nav>
+
+<header>
+    <h1>قسم الدواجن الطازجة</h1>
+    <p>دجاج مزارع تيبار.. تربية طبيعية وجودة مضمونة</p>
+    <div class="shipping-info">الذبح حسب الطلب - استلام من المقر</div>
+</header>
+
+<div class="container">
+    <div class="grid">
+        
+        <div class="card">
+            <img src="chicken1.jpg" alt="دجاج بلدي">
+            <div class="content">
+                <h3>دجاج بلدي (حي)</h3>
+                <p>تربية طبيعية 100% طعم زمان الأصيل</p>
+                <span class="price-tag">18.000 د.ت / للكلغ</span>
+                <a href="https://wa.me/21600000000?text=أريد طلب دجاج بلدي" class="btn-whatsapp">اطلب الآن</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="eggs.jpg" alt="بيض عربي">
+            <div class="content">
+                <h3>بيض عربي طازج</h3>
+                <p>بيض طبيعي من إنتاج يومه</p>
+                <span class="price-tag">1.200 د.ت / للبيضة</span>
+                <a href="https://wa.me/21600000000?text=أريد طلب بيض عربي" class="btn-whatsapp">اطلب الآن</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 منابع خيرات تيبار - قسم الدواجن</p>
+</footer>
+
+</body>
+</html>
