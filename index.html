@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
 <head>
-    <nav style="background: var(--main-green); text-align: center; padding: 10px; position: sticky; top: 0; z-index: 1000;">
-    <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">المنتجات الفلاحية</a>
-    <a href="chicken.html" style="color: #deff9a; text-decoration: none; margin: 0 15px; font-weight: bold;">قسم الدواجن 🍗</a>
-    </nav>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="    <title>مجمع منابع خيرات تيبار</title>
-    <meta name="description" content="مجمع منابع خيرات تيبار - أفضل المنتجات الطبيعية والفلاحية: هريسة عربي، زيت زيتون، ومربى طبيعي من قلب تيبار.">
-    <meta name="keywords" content="khairat thibar, khairat tebar, منابع خيرات تيبار, تيبار, Tebar, منتجات طبيعية تونسية">
-    <link rel="canonical" href="https://hgbhfg.github.io/khairat_thibar/" />
- 
     
     <title>مجمع منابع خيرات تيبار</title>
+    <meta name="description" content="مجمع منابع خيرات تيبار - أجود المنتجات الطبيعية والفلاحية: هريسة عربي، زيت زيتون، ومربى طبيعي من قلب تيبار.">
+    <meta name="keywords" content="khairat thibar, khairat tebar, منابع خيرات تيبار, تيبار, Tebar, منتجات طبيعية تونسية">
+    <link rel="canonical" href="https://hgbhfg.github.io/khairat_thibar/" />
+
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
     <style>
         :root {
             --main-green: #2d5a27;
@@ -32,8 +27,29 @@
             line-height: 1.6;
         }
 
+        /* المنيو العلوي */
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        nav a.active {
+            color: var(--light-green);
+            border-bottom: 2px solid var(--light-green);
+        }
+
         header {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1500&q=80');
             background-size: cover;
             background-position: center;
             color: white;
@@ -43,13 +59,24 @@
 
         .logo-text { font-size: 2.8rem; margin: 0; }
         .sub-text { font-size: 1.1rem; opacity: 0.9; margin-top: 10px; }
+        
+        .delivery-tag {
+            background: var(--accent-orange);
+            color: white;
+            display: inline-block;
+            padding: 5px 20px;
+            border-radius: 50px;
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
 
         .container { max-width: 1200px; margin: -40px auto 50px; padding: 20px; }
-
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 25px; 
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
 
         .card {
@@ -63,24 +90,11 @@
         }
 
         .card:hover { transform: translateY(-10px); }
-
-        .card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-
+        .card img { width: 100%; height: 300px; object-fit: cover; }
+        
         .content { padding: 20px; }
         .content h3 { margin: 0 0 10px; color: var(--main-green); }
-        .content p { color: #666; font-size: 0.9rem; margin-bottom: 15px; }
-
-        .price-tag {
-            color: var(--accent-orange);
-            font-weight: bold;
-            display: block;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
+        .price-tag { color: var(--accent-orange); font-weight: bold; display: block; margin-bottom: 15px; font-size: 1.2rem; }
 
         .btn-whatsapp {
             display: block;
@@ -92,7 +106,6 @@
             font-weight: bold;
             transition: 0.3s;
         }
-
         .btn-whatsapp:hover { background: #128c7e; }
 
         footer {
@@ -105,69 +118,58 @@
     </style>
 </head>
 <body>
-<nav style="background: #222; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000;">
-    <a href="index.html" style="color: #4caf50; text-decoration: none; margin: 0 15px; font-weight: bold; border-bottom: 2px solid #4caf50;">🌿 المنتجات الفلاحية</a>
-    <a href="chiken.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold;">🍗 قسم الدواجن</a>
-</nav>
-    
-<header>
-    <h1 class="logo-text">مجمع منابع خيرات تيبار</h1>
-    <p class="sub-text">منتجات طبيعية فخورة بجذورها في تيبار</p>
-    <div style="background: #f39c12; color: white; display: inline-block; padding: 5px 20px; border-radius: 50px; margin-top: 10px; font-weight: bold; font-size: 0.8rem;">
-    الاستلام مباشرة من مقر المجمع بتيبار
+
+    <nav>
+        <a href="index.html" class="active">🌿 المنتجات الفلاحية</a>
+        <a href="chiken.html">🍗 قسم الدواجن</a>
+    </nav>
+
+    <header>
+        <h1 class="logo-text">مجمع منابع خيرات تيبار</h1>
+        <p class="sub-text">منتجات طبيعية فخورة بجذورها في تيبار</p>
+        <div class="delivery-tag">الاستلام مباشرة من مقر المجمع بتيبار</div>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <img src="9016.png" alt="هريسة عربي">
+                <div class="content">
+                    <h3>هريسة عربي</h3>
+                    <p>صناعة تقليدية يدوية بنكهة تيبار الأصلية</p>
+                    <span class="price-tag">8.500 د.ت</span>
+                    <a href="https://wa.me/21629631630?text=أريد طلب هريسة عربي" class="btn-whatsapp">اطلب الآن</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="9017.png" alt="زيت زيتون">
+                <div class="content">
+                    <h3>زيت زيتون بكر</h3>
+                    <p>عصرة أولى باردة، جودة عالمية من مزارعنا</p>
+                    <span class="price-tag">15.000 د.ت</span>
+                    <a href="https://wa.me/21629631630?text=أريد طلب زيت زيتون" class="btn-whatsapp">اطلب الآن</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="9021.png" alt="مربى تين">
+                <div class="content">
+                    <h3>مربى التين (كرموس)</h3>
+                    <p>طبيعي 100% بدون مواد حافظة</p>
+                    <span class="price-tag">7.000 د.ت</span>
+                    <a href="https://wa.me/21629631630?text=أريد طلب مربى التين" class="btn-whatsapp">اطلب الآن</a>
+                </div>
+            </div>
+
+        </div>
     </div>
-    
-</header>
 
-<div class="container">
-    <div class="grid">
-        
-        <div class="card">
-            <img src="9016.png" alt="منتج">
-            <div class="content">
-                <h3>هريسة عربي</h3>
-                <p>صناعة تقليدية يدوية بنكهة تيبار الأصلية</p>
-                <span class="price-tag">8.500 د.ت</span>
-                <a href="https://wa.me/21629631630?text=أريد طلب الهريسة" class="btn-whatsapp">اطلب عبر واتساب</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="9017.png" alt="منتج">
-            <div class="content">
-                <h3>زيت زيتون بكر</h3>
-                <p>عصرة أولى باردة، غني بالفوائد الصحية</p>
-                <span class="price-tag">15.000 د.ت</span>
-                <a href="https://wa.me/21629631630?text=أريد طلب الزيت" class="btn-whatsapp">اطلب عبر واتساب</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="9021.png" alt="منتج">
-            <div class="content">
-                <h3>مربى تين</h3>
-                <p>معدّ من ثمار التين الطازجة بدون إضافات</p>
-                <span class="price-tag">12.000 د.ت</span>
-                <a href="https://wa.me/21629631630?text=أريد طلب مربى التين" class="btn-whatsapp">اطلب عبر واتساب</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="9024.png" alt="منتج">
-            <div class="content">
-                <h3>مربى سفرجل</h3>
-                <p>طعم كلاسيكي رائع من بساتين تيبار</p>
-                <span class="price-tag">12.500 د.ت</span>
-                <a href="https://wa.me/21629631630?text=أريد طلب مربى السفرجل" class="btn-whatsapp">اطلب عبر واتساب</a>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<footer>
-    <p>© 2026 مجمع منابع خيرات تيبار | تيبار، باجة، تونس</p>
-</footer>
+    <footer>
+        <p>© 2026 مجمع منابع خيرات تيبار | تيبار، باجة</p>
+        <p>تصميم وتطوير: Carthage AI</p>
+    </footer>
 
 </body>
 </html>
